@@ -17,6 +17,14 @@ public class State {
     @JoinColumn(name="id_pais")
     private Pais pais;
 
+    public State() {
+    }
+
+    public State(long id, String name, Pais pais) {
+        this.id = id;
+        this.name = name;
+        this.pais = pais;
+    }
 
     public long getId() {
         return id;
